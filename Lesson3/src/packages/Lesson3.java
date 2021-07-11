@@ -1,20 +1,22 @@
-package packages;
+package packages; 
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;  
 import java.io.FileInputStream;
 import java.util.Scanner;
-import java.io.PrintWriter; 
-public class lesson2 {
+import java.io.PrintWriter;  
+
+public class Lesson3 {
  
 	 public static void main(String[] args) throws FileNotFoundException { 
 		 
-		 //write
+		 //write in file
 		FileOutputStream RD = new FileOutputStream ("myfile.txt"); 
 		PrintWriter PR = new PrintWriter (RD); 
 		 
-		PR.println(" yes java its the best"); 
+		PR.println("Java Course"); 
 		PR.close(); 
-		System.out.println("File myfile.txt");  
+		System.out.println("File myfile.txt was written to");  
 		
 		//Read a file  
 		
@@ -24,7 +26,6 @@ public class lesson2 {
 		while (sc.hasNext()) { 
 			System.out.print(sc.nextLine());
 		}
-		
 		
 		
 		
